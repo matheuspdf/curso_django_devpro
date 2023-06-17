@@ -12,3 +12,6 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
   * Pipfile.lock
   * Comandos
   * .bashrc
+
+* ### Integração Pipenv Travis e Pyup
+  * Realizada migração do Travis CI para o CI do Github Actions
