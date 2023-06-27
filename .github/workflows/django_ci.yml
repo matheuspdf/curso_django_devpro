@@ -28,7 +28,7 @@ jobs:
           pipenv run flake8 .
       - name: Test with pytest
         run: |
-          pipenv run pytest curso_django_devpro --cov=curso_django_devpro --cov-report=xml --cov-report=term
+          pytest
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
