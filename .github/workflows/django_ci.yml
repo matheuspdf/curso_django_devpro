@@ -29,8 +29,3 @@ jobs:
       - name: Test with pytest
         run: |
           pipenv run pytest --cov=pypro
-      - name: Relational Coverage
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          pipenv run codecov
