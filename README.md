@@ -15,3 +15,29 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
 
 * ### Integração Pipenv Travis e Pyup
   * Realizada migração do Travis CI para o CI do Github Actions
+
+* ### Setup de Projeto e Arquivo Manage
+  * Ferramentas do django:
+    * django-admin
+    * startproject
+
+
+* ### Publicação no Heroku / Deploy Automático
+  * Deploy realizado no fly.io
+  * Feita integração fly.io e Github Actions
+  * [fly.io](https://curso-django-devpro.fly.dev/)
+  
+* ### Rodando Servidor no Pycharm
+  * Configuração do Pycharm para rodar o django 
+
+* ### Olá Django
+   * iniciada aplicação django através do comando 'startapp'
+   * integração contínua entre GA e fly.io
+
+* ### Pytest Django
+  * 'pytest-django'
+  * configurado Pycharm para rodar o pytest
+  * inserido linha de comando no arquivo de integração contínua
+
+* ### Cobertura de Testes
+  * pytest --cov
