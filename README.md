@@ -8,31 +8,30 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
 ## Entrega contínua
 
 * ### Pipenv
-  * Pipfile
-  * Pipfile.lock
-  * Comandos
-  * .bashrc
+  * Como utilizar o pipenv para instalar e gerenciar as dependências de um projeto.
+
 
 * ### Integração Pipenv Travis e Pyup
   * Realizada migração do Travis CI para o CI do Github Actions
 
+
 * ### Setup de Projeto e Arquivo Manage
-  * Ferramentas do django:
-    * django-admin
-    * startproject
+  * Ferramentas do django e como criar a 
+  estrutura inicial de arquivos do projeto.
 
 
-* ### Publicação no Heroku / Deploy Automático
-  * Deploy realizado no fly.io
+* ### Publicação no (~~Heroku~~)  |  Deploy Automático
+  * Como publicar a aplicação na Plataforma Fly.io
   * Feita integração fly.io e Github Actions
   * [fly.io](https://curso-django-devpro.fly.dev/)
   
 * ### Rodando Servidor no Pycharm
-  * Configuração do Pycharm para rodar o django 
+  * Como rodar o servidor local do django pelo Pycharm.
 
 * ### Olá Django
    * iniciada aplicação django através do comando 'startapp'
    * integração contínua entre GA e fly.io
+   * Primeira app criada
 
 * ### Pytest Django
   * 'pytest-django'
@@ -40,4 +39,12 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
   * inserido linha de comando no arquivo de integração contínua
 
 * ### Cobertura de Testes
-  * pytest --cov
+  * Relatório de cobertura de testes. pytest --cov.
+
+
+## Configurações de Projeto
+
+* ### Lib Python Decouple
+  * Como desacoplar configurações de instância da aplicação
+
+* ###
