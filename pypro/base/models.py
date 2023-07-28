@@ -25,7 +25,10 @@ class UserManager(BaseUserManager):
         GlobalUserModel = apps.get_model(
             self.model._meta.app_label, self.model._meta.object_name
         )
+<<<<<<< HEAD
         username = GlobalUserModel.normalize_username(email)
+=======
+>>>>>>> dc1b9c9 (Customizado usuário do django)
         user = self.model(email=email, **extra_fields)
         user.password = make_password(password)
         user.save(using=self._db)

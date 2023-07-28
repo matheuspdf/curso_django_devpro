@@ -8,7 +8,6 @@ from django.contrib.auth.forms import (
     UserChangeForm,
     UserCreationForm,
 )
-from django.contrib.auth.models import Group
 from django.core.exceptions import PermissionDenied
 from django.db import router, transaction
 from django.http import Http404, HttpResponseRedirect
@@ -104,7 +103,7 @@ class UserAdmin(admin.ModelAdmin):
             return self._add_view(request, form_url, extra_context)
 
     def _add_view(self, request, form_url="", extra_context=None):
-        # It's an error for a user to have add permission but NOT change
+        # It's an error for a user to have added permission but NOT change
         # permission for users. If we allowed such users to add users, they
         # could create superusers, which would mean they would essentially have
         # the permission to change users. To avoid the problem entirely, we
