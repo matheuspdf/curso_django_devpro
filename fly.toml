@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for curso-django-devpro on 2023-06-28T19:26:56-03:00
+# fly.toml app configuration file generated for curso-django-devpro on 2023-07-29T17:18:58-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -9,7 +9,10 @@ console_command = "/code/manage.py shell"
 
 [env]
   PORT = "8000"
-  DATABASE_URL = "sqlite3:///mnt/volume/production.sqlite3"
+
+[[mounts]]
+  source = "sqlite3_volume"
+  destination = "/mnt/volume"
 
 [http_service]
   internal_port = 8000
@@ -22,7 +25,3 @@ console_command = "/code/manage.py shell"
 [[statics]]
   guest_path = "/code/static"
   url_prefix = "/static/"
-
-[mounts]
-  source = "sqlite3_volume"
-  destination = "/mnt/volume"
