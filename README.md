@@ -1,4 +1,4 @@
-# curso_django_devpro
+# curso_django_devpro 
 
 Projeto desenvolvido no módulo 03 Django do [Site Dev Pro](https://www.dev.pro.br/)<br>
 Os detalhes e anotações sobre o que foi praticado durante o curso estão disponíveis para consulta na minha página do [Notion](https://matheuspdf.notion.site/03-Django-DevPro-230b19c1354d427da77da23566e5aa19?pvs=4)
@@ -43,8 +43,16 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
 
 
 ## Configurações de Projeto
-
+Neste segundo capítulo, o objetivo foi desacoplar as configurações de instância do projeto e instalar ferramentas básicas de log, banco de dados e arquivos estáticos.
 * ### Lib Python Decouple
-  * Como desacoplar configurações de instância da aplicação
-
-* ###
+  * separação das configurações de instância da aplicação.
+* ### Secret Key
+  * assinatura criptográfica
+* ### Domínio e ALLOWED_HOSTS
+  * configuração de domínio, servidor DNS e configuração de hosts permitidos.
+* ### Endereço de Banco de Dados
+  * configuração do endereço do banco de dados no servidor. (Postgre)
+* ### Testando PostgreSQL no GitHub Actions - CI
+  * Setup do servidor de CI para rodar os testes de forma similar ao ambiente de produção.
+* ### Língua e Fuso Horário
+  * configurado padrão de idioma e fuso horário.
