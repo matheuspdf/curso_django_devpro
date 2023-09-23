@@ -162,4 +162,4 @@ cython_debug/
 
 # postgres files for local development
 
-.pgdata
+.pgdata/
