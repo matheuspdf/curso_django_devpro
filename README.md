@@ -5,7 +5,9 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
 
 [![Python application](https://github.com/matheuspdf/curso_django_devpro/actions/workflows/django_ci.yml/badge.svg)](https://github.com/matheuspdf/curso_django_devpro/actions/workflows/django_ci.yml)
 
-## Entrega contínua
+
+
+## 01. Entrega contínua
 
 * ### Pipenv
   * Como utilizar o pipenv para instalar e gerenciar as dependências de um projeto.
@@ -42,7 +44,7 @@ Os detalhes e anotações sobre o que foi praticado durante o curso estão dispo
   * Relatório de cobertura de testes. pytest --cov.
 
 
-## Configurações de Projeto
+## 02. Configurações de Projeto
 Neste segundo capítulo, o objetivo foi desacoplar as configurações de instância do projeto e instalar ferramentas básicas de log, banco de dados e arquivos estáticos.
 * ### Lib Python Decouple
   * separação das configurações de instância da aplicação.
@@ -56,3 +58,16 @@ Neste segundo capítulo, o objetivo foi desacoplar as configurações de instân
   * Setup do servidor de CI para rodar os testes de forma similar ao ambiente de produção.
 * ### Língua e Fuso Horário
   * configurado padrão de idioma e fuso horário.
+
+
+## 03. Arquivos Estáticos e Upload de Arquivos
+* ### Comando de Coleta de Arquivos Estáticos
+  * Configurações para coletas de arquivos estáticos e comando "collectstatic".
+* ### Criação de Usuário na Amazon (IAM e S3):
+  * Declaração das variáveis de ambiente necessárias para o upload no ambiente AWS.
+* ### Criação e Configuração do S3:
+  * Criação e configuração do bucket juntamente com a política necessária no AWS Policy Generator.
+* ### Configurando a Lib django_s3_folder_storage
+  * Gerenciamento na nuvem usando a lib django_s3_folder_storage
+* ### Otimizando Uploads com Collectfast
+  * Biblioteca collectfast no processo de entrega contínua
