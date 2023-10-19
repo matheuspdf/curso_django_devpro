@@ -134,7 +134,7 @@ USE_TZ = True
 
 
 # Configuração do ambiente de desenvolvimento
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
