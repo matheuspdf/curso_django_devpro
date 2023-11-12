@@ -1,2 +1,2 @@
-release: python manage.py migrate --noinput
+deac
 web: gunicorn pypro.wsgi --log-file -
